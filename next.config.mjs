@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/2024',
+  basePath: '/2026',
   productionBrowserSourceMaps: true,
   output: 'export',
   eslint: {

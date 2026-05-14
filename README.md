@@ -1,5 +1,60 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## 2026 Deploy Notes
+
+Required local data files (do NOT commit them to GitHub!):
+
+.env
+```
+NEXT_PUBLIC_TICKET_URL=https://hkoscon2026.eventbrite.com
+NEXT_PUBLIC_ENABLE_CFP_RESULT=1
+NEXT_PUBLIC_ENABLE_CFP=1
+NEXT_PUBLIC_ENABLE_TIMETABLE=0
+NEXT_PUBLIC_ENABLE_SPONSOR=0
+```
+
+src/app/meta.json
+```
+{
+  "conference": {
+    "name": "HKOSCon 2026",
+    "sponsors": [...],
+    "supporting_organizations": [...]
+  }
+}
+```
+
+For accepted CFP:
+
+src/app/events.json
+```
+{
+  "events": [
+    {
+      "display": "Topic 1 by Speaker 1"
+    },
+    {
+      "display": "Topic 2 by Speaker 2"
+    }
+}
+```
+
+Local Test:
+```bash
+npm run dev
+```
+
+Deploy to github-page branch for GitHub Page deployment:
+```bash
+npm run build
+cd out
+git init
+git add .
+git commit -m "deploy"
+git push --force git@github.com:<org>/2026.git main:gh-pages
+cd ..
+```
+
 ## Getting Started
 
 First, run the development server:

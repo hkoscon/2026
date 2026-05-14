@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="has-text-right is-size-3 app-footer__hashtag">
-        #HKOSCon2024
+        #HKOSCon2026
       </div>
       <div className="content has-text-centered">
         <span>
@@ -54,8 +54,8 @@ export default function Footer() {
           </div>
           <div className="organisingCommitteeCarousel__item">
             <img
-              src="https://events.cota.hk/sites/default/files/styles/width_550/public/2024-06/hku_csa_logo.png?itok=Pek-MIn4"
-              alt="Computer Science Association, Engineering Society, HKU"
+              src="https://opensource.hk/wp-content/uploads/2026/03/HKIIT_endorsement_logo_RGB_horizontal.jpg"
+              alt="Hong Kong Institute of Information Technology"
             />
           </div>
         </div>

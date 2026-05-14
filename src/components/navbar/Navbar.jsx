@@ -18,6 +18,7 @@ import {
 import './navbar.scss';
 
 const archivedYears = [
+  '2024',
   '2023',
   '2022',
   '2021',

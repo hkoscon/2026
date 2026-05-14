@@ -34,7 +34,7 @@ export async function generateMetadata({ params: { topic: topicId } }) {
   return {
     title: topic.display,
     openGraph: {
-      title: `${topic.display} | Hong Kong Open Source Conference 2024`,
+      title: `${topic.display} | Hong Kong Open Source Conference 2026`,
     },
   };
 }

@@ -15,16 +15,16 @@ export const viewport = {
 /** @type {import('next').Metadata} */
 export const metadata = {
   title: {
-    default: 'Hong Kong Open Source Conference 2024',
-    template: '%s | Hong Kong Open Source Conference 2024',
+    default: 'Hong Kong Open Source Conference 2026',
+    template: '%s | Hong Kong Open Source Conference 2026',
   },
   description: 'Hong Kong Open Source Conference is the biggest annual open source event in Hong Kong.',
   authors: [
     { name: 'Team 404 Busters' },
   ],
   openGraph: {
-    title: 'Hong Kong Open Source Conference 2024',
-    siteName: 'Hong Kong Open Source Conference 2024',
+    title: 'Hong Kong Open Source Conference 2026',
+    siteName: 'Hong Kong Open Source Conference 2026',
     type: 'website',
     images: 'https://hkoscon.org/logo.png',
     description: 'Hong Kong Open Source Conference is the biggest annual open source event in Hong Kong.',
