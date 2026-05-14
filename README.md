@@ -48,10 +48,11 @@ Deploy to github-page branch for GitHub Page deployment:
 ```bash
 npm run build
 cd out
+touch .nojekyll
 git init
 git add .
 git commit -m "deploy"
-git push --force git@github.com:<org>/2026.git main:gh-pages
+git push --force git@github.com:hkoscon/2026.git main:gh-pages
 cd ..
 ```
 
