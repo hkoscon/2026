@@ -42,7 +42,7 @@ export default function Page() {
     newDay1,
     dataForumDay1,
     timetable[1],
-  ];
+  ].filter(Boolean);
   return (
     <div className="container is-fluid">
       {newTimeTable.map(({ day, timeslots }) => (
