@@ -22,28 +22,17 @@ export default function Home() {
                   <a
                     className="button is-link"
                     rel="noreferrer"
-                    target="_blank"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfUivewPmB86xrKbjxFj473FRNCXi-ZRP9-XKI2Lnl3Yt1TUg/viewform?usp=send_form"
+                    href="https://hkoscon2026.eventbrite.com/"
                   >
-                    Call For Volunteers
+                    Get Ticket
                   </a>
                   <br />
                   <a
                     className="button is-link"
                     rel="noreferrer"
-                    target="_blank"
-                    href="mailto:conference@opensource.hk"
+                    href="/2026/timetable"
                   >
-                    Enquiry Email
-                  </a>
-                  <br />
-                  <a
-                    className="button is-link"
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://t.me/opensourcehkdiscuss"
-                  >
-                    Telegram group
+                    Timetable
                   </a>
                 </div>
               </div>
