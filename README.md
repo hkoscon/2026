@@ -39,6 +39,54 @@ src/app/events.json
 }
 ```
 
+Timetable JSON format:
+```
+{
+  "days": [
+    {
+      "date": "2026-06-06",
+      "day": "1",
+      "timeslots": [
+        {
+          "startTime": "10:00",
+          "endTime": "10:25",
+          "events": [
+            {
+              "id": 1,
+              "display": "Opening Remarks",
+              "topic": true,
+              "internal": "/topic/opening-remarks",
+              "venue": {
+                "name": "LT-10"
+              },
+              "language": "English",
+              "level": "Beginner",
+              "description": "Open Source related news & updates",
+              "speakers": [
+                {
+                  "name": "Sammy",
+                  "thumbnail": "/2026/images/sammy.jpg",
+                  "country": "Hong Kong",
+                  "community": "Open Source",
+                  "description": "Chairman of OS in HK",
+                  "website": "",
+                  "github": "",
+                  "x": "",
+                  "mastodon": "",
+                  "linkedin": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Speaker Photos can be stored at public/images/ directory.
+
 Local Test:
 ```bash
 npm run dev

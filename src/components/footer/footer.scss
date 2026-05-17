@@ -1,4 +1,16 @@
 .app-footer {
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  &__social-link {
+    color: var(--brand-color-blue);
+    &:hover {
+      opacity: 0.75;
+    }
+  }
   &__cc-logo {
     height: 22px;
     margin-left: 3px;

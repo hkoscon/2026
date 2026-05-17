@@ -127,6 +127,11 @@ export default function Page({ params: { topic: topicId } }) {
           <h1 className="title has-text-brand-color-yellow">{topic.display}</h1>
         </div>
       </section>
+      <section className="container my-4 has-text-right">
+        <a className="button is-link has-background-brand-color-yellow  has-text-brand-color-blue is-hidden-tablet" href="https://hkoscon2026.eventbrite.com/" rel="noreferrer">
+          Get Ticket
+        </a>
+      </section>
       <section className="container my-4 content topicPage__metadata">
         <p>
           Time:&nbsp;

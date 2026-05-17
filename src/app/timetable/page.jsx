@@ -40,11 +40,15 @@ export default function Page() {
   });
   const newTimeTable = [
     newDay1,
-    dataForumDay1,
     timetable[1],
   ].filter(Boolean);
   return (
     <div className="container is-fluid">
+      <div className="has-text-centered my-4">
+        <a className="button is-link has-background-brand-color-yellow  has-text-brand-color-blue is-hidden-tablet" href="https://hkoscon2026.eventbrite.com/" rel="noreferrer">
+          Get Ticket
+        </a>
+      </div>
       {newTimeTable.map(({ day, timeslots }) => (
         <TimetableDay key={`day${day}`} day={day} timeslots={timeslots} />
       ))}
