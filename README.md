@@ -92,6 +92,38 @@ Local Test:
 npm run dev
 ```
 
+Volunteer list json format:
+```
+[
+  {
+    "role": "Organsing Committee",
+    "members": [
+      {
+        "name": "Samt",
+        "website": "",
+        "github": "",
+        "x": "",
+        "mastodon": "",
+        "linkedin": ""
+      }
+    ]
+  },
+    {
+    "role": "Program Committee",
+    "members": [
+      {
+        "name": "Samt",
+        "website": "",
+        "github": "",
+        "x": "",
+        "mastodon": "",
+        "linkedin": ""
+      }
+    ]
+  }
+]
+```
+
 Deploy to github-page branch for GitHub Page deployment:
 ```bash
 npm run build
