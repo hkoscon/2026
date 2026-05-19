@@ -119,6 +119,9 @@ export default function Navbar() {
               <a href="https://info.hkoscon.org/introduction/" className="navbar-item" target="_blank" rel="noreferrer">About Us</a>
               <a href="https://info.hkoscon.org/code-of-conduct/" className="navbar-item" target="_blank" rel="noreferrer">Code of Conduct</a>
               <a href="https://info.hkoscon.org/organizers/" className="navbar-item" target="_blank" rel="noreferrer">Organizers</a>
+              <Link href="/volunteer" className="navbar-item">
+                Volunteers
+              </Link>
             </div>
           </div>
 
