@@ -3,13 +3,13 @@ import Link from 'next/link';
 import SpeakerList from './SpeakerList';
 
 export default function EventCard({
-  id, internal, display, venue, speakers, topic,
+  id, internal, display, venue, speakers, topic, language,
 }) {
   const card = (
     <div className="card">
       <div className="card-content">
         <p className="title has-text-weight-medium is-size-4">{display}</p>
-        <p className="subtitle is-size-6">{venue.name}</p>
+        <p className="subtitle is-size-6">{venue.name}{language ? ` (${language})` : ''}</p>
       </div>
       {speakers && (<SpeakerList id={id} speakers={speakers} />)}
     </div>
@@ -39,6 +39,7 @@ EventCard.propTypes = {
   venue: PropTypes.shape({
     name: PropTypes.string.isRequired,
   }).isRequired,
+  language: PropTypes.string,
   speakers: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     thumbnail: PropTypes.string,
@@ -49,4 +50,5 @@ EventCard.propTypes = {
 
 EventCard.defaultProps = {
   speakers: null,
+  language: null,
 };

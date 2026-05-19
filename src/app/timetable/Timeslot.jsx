@@ -11,7 +11,7 @@ export default function Timeslot({ startTime, events }) {
         <span className="timeslot__startTime__minute">{startTime.substring(3, 5)}</span>
       </div>
       {events.map(({
-        id, display, venue, speakers, internal, topic,
+        id, display, venue, speakers, internal, topic, language,
       }) => (
         <EventCard
           key={id}
@@ -21,6 +21,7 @@ export default function Timeslot({ startTime, events }) {
           speakers={speakers}
           internal={internal}
           topic={topic}
+          language={language}
         />
       ))}
     </div>
