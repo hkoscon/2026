@@ -122,6 +122,9 @@ export default function Navbar() {
               <Link href="/volunteer" className="navbar-item">
                 Volunteers
               </Link>
+              <Link href="/patron" className="navbar-item">
+                Patron
+              </Link>
             </div>
           </div>
 
