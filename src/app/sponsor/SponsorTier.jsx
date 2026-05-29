@@ -5,7 +5,7 @@ import './sponsorTier.scss';
 import './supportOrgInfo.scss';
 
 export default function SponsorTier({ name, sponsors }) {
-  if (name !== 'Supporting Organization') {
+  if (name !== 'Communities') {
     return (
       <section className="section">
         <h3 className="title sponsorTier__title">{name}</h3>

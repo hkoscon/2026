@@ -130,7 +130,7 @@ export default function Navbar() {
 
           {enableSponsor && (
             <Link href="/sponsor" className="navbar-item">
-              Sponsor & Supporting Organization
+              Sponsors & Communities
             </Link>
           )}
 

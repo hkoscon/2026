@@ -9,7 +9,7 @@ export default function SponsorPage() {
     <>
       <header className="hero is-medium">
         <div className="hero-body">
-          <h1 className="title">Sponsor & Supporting Organization</h1>
+          <h1 className="title">Sponsors & Communities</h1>
         </div>
       </header>
       <main className="container">
@@ -17,7 +17,7 @@ export default function SponsorPage() {
           <p>
             Hong Kong Open Source Conference is running on its own budget,
             and we cannot make it without the support from our sponsors
-            and supporting organizations.
+            and communities.
             {Object.values(sponsorData).length > 0 && (
             <> Cordially, we would like to thank the following sponsors for their support.</>
             )}
