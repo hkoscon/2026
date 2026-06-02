@@ -51,12 +51,15 @@ export default function Home() {
                   KMB Bus 243M, 249M, 241X, 42, 42A, 43, 43A, 43M, 49M, and NT GMB mini bus 88C, 88D. (Source: <a href="https://hkiit.edu.hk/contact-us" target="_blank">HKIIT web site</a>)
                 </p>
                 <p>
-                  Or you can reach by Taxi to HKIIT at VTC Tsing Yi Complex, 20A Tsing Yi Road, Tsing Yi Island, New Territories.
+                  If you are taking a taxi, the entrance is via <strong>Sai Shan Road 細山路 – Enter through Gate 3 (VTC Tsing Yi Complex)</strong>. Please note that campus parking is strictly reserved for staff vehicles only. If you are driving, kindly use nearby public parking facilities at <a href="https://maps.app.goo.gl/iHy8CNAaUuxG63xE6">Mayfair Gardens Carpark 美景花園停車場</a>. 
                 </p>
                 <p>
+                  Hong Kong Institute of Information Technology (HKIIT) 香港資訊科技學院<br/>
+                  Address: VTC Tsing Yi Complex, 20A Tsing Yi Road, Tsing Yi Island, New Territories<br/><br/>
                   VTC Tsing Yi Complex is as known as HK IVE Tsing Yi (Hong Kong Institute of Vocational Education (Tsing Yi) on some maps. HKIIT is a part of VTC / IVE Tsing Yi campus. In Chinese,
                   香港資訊科技學院 (新界青衣島青衣路20A號職業訓練局青衣大樓)
                 </p>
+                <a href="/2026/images/location_map.png" target="_tab"><img src="/2026/images/location_map.png" alt="Location Map" style={{ width: '100%', marginBottom: '1rem' }} /></a>
                 <div className="homePage__transportation__box__actions">
                   <a
                     className="button is-link"
