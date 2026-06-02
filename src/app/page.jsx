@@ -34,6 +34,22 @@ export default function Home() {
                   >
                     Timetable
                   </a>
+                  <br />
+                  <a
+                    className="button is-link"
+                    rel="noreferrer"
+                    href="https://shop.hkoscon.org/product/hkoscon-2026-t-shirt/"
+                  >
+                    T-Shirt Pre-Order
+                  </a>
+                  <br />
+                  <a
+                    className="button is-link"
+                    rel="noreferrer"
+                    href="/2026/patron"
+                  >
+                    Patron
+                  </a>
                 </div>
               </div>
             </div>
