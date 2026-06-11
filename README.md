@@ -2,7 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## 2026 Deploy Notes
 
-Required local data files (do NOT commit them to GitHub!):
+### Local Test
+
+```bash
+npm run dev
+```
+
+### JSON config files
+
+1. Requires a local .env feature config files (do NOT commit them to GitHub!):
 
 .env
 ```
@@ -13,13 +21,45 @@ NEXT_PUBLIC_ENABLE_TIMETABLE=0
 NEXT_PUBLIC_ENABLE_SPONSOR=0
 ```
 
-src/app/meta.json
+2. Requires 6 JSON files for data files
+
+src/app/meta.json for conference name, sponsor, 
 ```
 {
   "conference": {
     "name": "HKOSCon 2026",
-    "sponsors": [...],
-    "supporting_organizations": [...]
+    "sponsors": {
+      "Gold": {
+        "name": "Gold Sponsor",
+        "sponsors": [
+          {
+            "title": "Gold Company Inc.",
+            "logo": "/2026/images/sponsors/gold-company.jpg",
+            "description": "<p>.....</p>",
+            "links": [
+              { "title": "Website", "url": "" }
+            ]
+          }
+        ]
+      },
+      "Silver": {
+        "name": "Silver Sponsor",
+        "sponsors": [
+          {
+            "title": "Silver Maker",
+            "logo": "/2026/images/sponsors/silver-maker.jpg",
+            "description": "<p>.....</p>",
+            "links": [
+              { "title": "Website", "url": "" }
+            ]
+          }
+        ]
+      }
+    },
+    "supporting_organizations": [
+      { "title": "A User Group", "logo": "/2026/images/supportorgs/a-user-group.png" },
+      { "title": "B Organisation", "logo": "/2026/images/supportorgs/b-org.png" },
+    ]
   }
 }
 ```
@@ -39,7 +79,21 @@ src/app/events.json
 }
 ```
 
+Patron:
+
+src/app/patrons.json
+```
+[
+    {"name": "Patron Alpha"},
+    {"name": "Patron Beta"}
+]
+```
+
 Timetable JSON format:
+
+Notes: Speaker Photos can be stored at public/images/ directory.
+
+src/app/timetable.json
 ```
 {
   "days": [
@@ -85,14 +139,43 @@ Timetable JSON format:
 }
 ```
 
-Speaker Photos can be stored at public/images/ directory.
+Session list:
 
-Local Test:
-```bash
-npm run dev
+src/app/session
+```
+[
+  {
+    "id": 35,
+    "display": "Session topic title",
+    "topic": true,
+    "internal": "/topic/session-topic-title",
+    "venue": {
+      "name": "LT0"
+    },
+    "language": "Cantonese",
+    "level": "Beginner",
+    "targetAudience": "General User",
+    "description": "This is session description",
+    "speaker": [
+      {
+        "name": "Speaker ABC",
+        "thumbnail": "/images/speaker-abc.jpg",
+        "country": "Hong Kong",
+        "description": "Speaker Bio Here",
+        "community": "",
+        "website": "",
+        "github": "",
+        "x": "",
+        "linkedin": ""
+      }
+    ]
+  }
+]
 ```
 
 Volunteer list json format:
+
+src/app/volunteers.json
 ```
 [
   {
@@ -123,6 +206,8 @@ Volunteer list json format:
   }
 ]
 ```
+
+### Deploy to GitHub page
 
 Deploy to github-page branch for GitHub Page deployment:
 ```bash
